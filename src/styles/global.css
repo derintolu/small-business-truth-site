@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+/* Custom theme configuration for Tailwind v4 */
+@theme {
+  --color-navy: #0c1425;
+  --color-navy-90: #141e33;
+
+  --font-display: 'Outfit', system-ui, sans-serif;
+  --font-body: 'Newsreader', Georgia, serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+}

@@ -1,0 +1,105 @@
+---
+// Sources & Footer
+const sources = {
+  taxWealth: [
+    { name: "Federal Reserve DFA", url: "https://www.federalreserve.gov/releases/z1/dataviz/dfa/distribute/chart/" },
+    { name: "IRS Statistics of Income", url: "https://www.irs.gov/statistics/soi-tax-stats-individual-income-tax-statistics" },
+    { name: "ProPublica Secret IRS Files", url: "https://www.propublica.org/series/the-secret-irs-files" },
+    { name: "Tax Foundation", url: "https://taxfoundation.org/" },
+    { name: "ITEP Corporate Tax Avoidance", url: "https://itep.org/corporate-tax-avoidance-under-the-tax-cuts-and-jobs-act/" },
+  ],
+  smallBusiness: [
+    { name: "U.S. Chamber Small Business Index", url: "https://www.uschamber.com/small-business/small-business-index" },
+    { name: "U.S. PIRG Offshore Tax Report", url: "https://pirg.org/resources/picking-up-the-tab-2024/" },
+    { name: "Small Business Majority", url: "https://smallbusinessmajority.org/our-research" },
+    { name: "FACT Coalition", url: "https://thefactcoalition.org/" },
+  ],
+  healthcare: [
+    { name: "KFF Employer Health Benefits 2024", url: "https://www.kff.org/health-costs/report/2024-employer-health-benefits-survey/" },
+    { name: "Commonwealth Fund", url: "https://www.commonwealthfund.org/publications/issue-briefs/2023/jan/us-health-care-global-perspective-2022" },
+    { name: "Peterson-KFF Health Tracker", url: "https://www.healthsystemtracker.org/" },
+  ],
+  techBillionaires: [
+    { name: "Washington Post (Musk Feb 2025)", url: "https://www.washingtonpost.com/business/2025/02/04/elon-musk-exposed-to-38-billion-in-government-contracts-loans-and-subsidies/" },
+    { name: "USAspending.gov", url: "https://www.usaspending.gov/" },
+    { name: "SEC Tesla Proxy Statements", url: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001318605&type=DEF%2014A" },
+  ],
+  politicalMoney: [
+    { name: "OpenSecrets Lobbying", url: "https://www.opensecrets.org/federal-lobbying" },
+    { name: "OpenSecrets 2024 Election", url: "https://www.opensecrets.org/elections-overview" },
+    { name: "Brennan Center Dark Money", url: "https://www.brennancenter.org/issues/reform-money-politics" },
+  ],
+  mobility: [
+    { name: "Opportunity Insights", url: "https://opportunityinsights.org/" },
+    { name: "The Fading American Dream", url: "https://opportunityinsights.org/paper/the-fading-american-dream/" },
+  ],
+};
+---
+
+<section id="sources" class="py-12 bg-gray-100">
+  <div class="max-w-6xl mx-auto px-6 md:px-12">
+    <h3 class="font-display font-bold text-2xl mb-6">Sources</h3>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div>
+        <h4 class="font-display font-semibold text-sm uppercase tracking-wide text-gray-700 mb-3">Tax & Wealth Data</h4>
+        <ul class="space-y-1">
+          {sources.taxWealth.map(s => (
+            <li><a href={s.url} target="_blank" rel="noopener" class="font-mono text-xs text-blue-600 hover:text-blue-800 hover:underline">{s.name}</a></li>
+          ))}
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-display font-semibold text-sm uppercase tracking-wide text-gray-700 mb-3">Small Business</h4>
+        <ul class="space-y-1">
+          {sources.smallBusiness.map(s => (
+            <li><a href={s.url} target="_blank" rel="noopener" class="font-mono text-xs text-blue-600 hover:text-blue-800 hover:underline">{s.name}</a></li>
+          ))}
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-display font-semibold text-sm uppercase tracking-wide text-gray-700 mb-3">Healthcare</h4>
+        <ul class="space-y-1">
+          {sources.healthcare.map(s => (
+            <li><a href={s.url} target="_blank" rel="noopener" class="font-mono text-xs text-blue-600 hover:text-blue-800 hover:underline">{s.name}</a></li>
+          ))}
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-display font-semibold text-sm uppercase tracking-wide text-gray-700 mb-3">Tech Billionaires</h4>
+        <ul class="space-y-1">
+          {sources.techBillionaires.map(s => (
+            <li><a href={s.url} target="_blank" rel="noopener" class="font-mono text-xs text-blue-600 hover:text-blue-800 hover:underline">{s.name}</a></li>
+          ))}
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-display font-semibold text-sm uppercase tracking-wide text-gray-700 mb-3">Political Money</h4>
+        <ul class="space-y-1">
+          {sources.politicalMoney.map(s => (
+            <li><a href={s.url} target="_blank" rel="noopener" class="font-mono text-xs text-blue-600 hover:text-blue-800 hover:underline">{s.name}</a></li>
+          ))}
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-display font-semibold text-sm uppercase tracking-wide text-gray-700 mb-3">Economic Mobility</h4>
+        <ul class="space-y-1">
+          {sources.mobility.map(s => (
+            <li><a href={s.url} target="_blank" rel="noopener" class="font-mono text-xs text-blue-600 hover:text-blue-800 hover:underline">{s.name}</a></li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="py-6 bg-navy text-center">
+  <p class="font-mono text-xs text-gray-500">
+    Every statistic on this page is from a verified, non-partisan source.
+  </p>
+</footer>

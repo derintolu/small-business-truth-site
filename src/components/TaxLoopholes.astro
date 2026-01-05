@@ -1,0 +1,100 @@
+---
+// The Loopholes You Can't Use
+import { Globe, RefreshCw, Briefcase, SquareCheck } from 'lucide-astro';
+---
+
+<section class="py-16 md:py-24 bg-slate-50">
+  <div class="max-w-6xl mx-auto px-6 md:px-12">
+    <div class="section-line bg-red-500 mb-6"></div>
+    <h2 class="font-display font-extrabold text-3xl md:text-4xl tracking-tight mb-3">
+      The Loopholes You Can't Use
+    </h2>
+    <p class="font-body text-xl text-gray-600 max-w-3xl mb-10">
+      These aren't theoretical advantages. These are specific, legal tax strategies available to large corporations and the ultra-wealthy — but not to you.
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-6 mb-8">
+      <!-- Deferral Loophole -->
+      <div class="card p-6">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center">
+            <Globe class="w-5 h-5 text-red-600" />
+          </div>
+          <h3 class="font-display font-bold text-xl text-gray-900">Deferral Loophole</h3>
+        </div>
+        <p class="text-gray-700 mb-3">
+          Multinational corporations can indefinitely defer U.S. taxes on foreign profits by keeping money offshore.
+        </p>
+        <div class="bg-red-50 p-3 rounded-lg">
+          <span class="font-mono text-red-600 font-bold">$126 billion/year</span>
+          <span class="text-gray-600 text-sm ml-2">in deferred taxes</span>
+        </div>
+        <p class="text-sm text-gray-500 mt-2">You can't do this with your domestic income.</p>
+      </div>
+
+      <!-- Transfer Pricing -->
+      <div class="card p-6">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center">
+            <RefreshCw class="w-5 h-5 text-red-600" />
+          </div>
+          <h3 class="font-display font-bold text-xl text-gray-900">Transfer Pricing</h3>
+        </div>
+        <p class="text-gray-700 mb-3">
+          Corporations shift profits to subsidiaries in tax havens by charging internal fees for "intellectual property."
+        </p>
+        <div class="bg-red-50 p-3 rounded-lg">
+          <span class="font-mono text-red-600 font-bold">55%</span>
+          <span class="text-gray-600 text-sm ml-2">of offshore profits in 7 tax havens</span>
+        </div>
+        <p class="text-sm text-gray-500 mt-2">You can't create a subsidiary in Ireland.</p>
+      </div>
+
+      <!-- Carried Interest -->
+      <div class="card p-6">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center">
+            <Briefcase class="w-5 h-5 text-red-600" />
+          </div>
+          <h3 class="font-display font-bold text-xl text-gray-900">Carried Interest</h3>
+        </div>
+        <p class="text-gray-700 mb-3">
+          Private equity and hedge fund managers pay 20% capital gains rates on their management fees instead of 37% income rates.
+        </p>
+        <div class="bg-red-50 p-3 rounded-lg">
+          <span class="font-mono text-red-600 font-bold">20% vs 37%</span>
+          <span class="text-gray-600 text-sm ml-2">for the same work</span>
+        </div>
+        <p class="text-sm text-gray-500 mt-2">Your consulting fees are taxed as income.</p>
+      </div>
+
+      <!-- Check-the-Box -->
+      <div class="card p-6">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center">
+            <SquareCheck class="w-5 h-5 text-red-600" />
+          </div>
+          <h3 class="font-display font-bold text-xl text-gray-900">Check-the-Box Rules</h3>
+        </div>
+        <p class="text-gray-700 mb-3">
+          Corporations can choose how their foreign subsidiaries are classified for tax purposes, enabling complex avoidance structures.
+        </p>
+        <div class="bg-red-50 p-3 rounded-lg">
+          <span class="font-mono text-red-600 font-bold">$7 billion/year</span>
+          <span class="text-gray-600 text-sm ml-2">in round-tripping schemes</span>
+        </div>
+        <p class="text-sm text-gray-500 mt-2">You can't elect to be an "ignored entity."</p>
+      </div>
+    </div>
+
+    <!-- Summary -->
+    <div class="card p-6 text-center">
+      <p class="font-body text-lg text-gray-700 mb-4">
+        These loopholes weren't accidents. They were written by lobbyists, passed by Congress, and signed into law.
+      </p>
+      <p class="font-mono text-sm text-gray-400">
+        Congressional Research Service / ITEP / Tax Policy Center
+      </p>
+    </div>
+  </div>
+</section>

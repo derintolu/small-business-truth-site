@@ -1,0 +1,122 @@
+---
+// Healthcare: Your Biggest Competitive Disadvantage
+import { Banknote, Flag, TrendingUp } from 'lucide-astro';
+---
+
+<section class="py-16 md:py-24 bg-slate-50">
+  <div class="max-w-6xl mx-auto px-6 md:px-12">
+    <div class="section-line bg-red-500 mb-6"></div>
+    <h2 class="font-display font-extrabold text-3xl md:text-4xl tracking-tight mb-3">
+      Healthcare: Your Biggest Competitive Disadvantage
+    </h2>
+    <p class="font-body text-xl text-gray-600 max-w-3xl mb-10">
+      You're not just competing against other businesses. You're competing against a healthcare system that gives large corporations massive advantages.
+    </p>
+
+    <div class="grid md:grid-cols-3 gap-6 mb-8">
+      <div class="card p-6 text-center">
+        <div class="stat-large text-red-600">35%</div>
+        <div class="text-xl font-semibold text-gray-800 mt-2">Higher Premiums</div>
+        <p class="text-gray-600 mt-2">Than large corporations for the same coverage</p>
+      </div>
+      
+      <div class="card p-6 text-center">
+        <div class="stat-large text-red-600">49%</div>
+        <div class="text-xl font-semibold text-gray-800 mt-2">Can Offer Insurance</div>
+        <p class="text-gray-600 mt-2">vs 97.6% of large corporations</p>
+      </div>
+      
+      <div class="card p-6 text-center">
+        <div class="stat-large text-red-600">12%</div>
+        <div class="text-xl font-semibold text-gray-800 mt-2">Of Revenue</div>
+        <p class="text-gray-600 mt-2">Goes to health insurance (under $600K revenue)</p>
+      </div>
+    </div>
+
+    <!-- The Talent Problem -->
+    <div class="card p-6 mb-8">
+      <h3 class="font-display font-bold text-xl text-gray-900 mb-4">
+        The Vicious Cycle You're Stuck In
+      </h3>
+      
+      <div class="flex flex-wrap items-center justify-center gap-4 text-center py-6">
+        <div class="bg-red-50 px-4 py-3 rounded-xl">
+          <span class="font-semibold text-gray-800">Can't afford competitive benefits</span>
+        </div>
+        <span class="text-2xl text-gray-400">→</span>
+        <div class="bg-red-50 px-4 py-3 rounded-xl">
+          <span class="font-semibold text-gray-800">Lose talent to larger companies</span>
+        </div>
+        <span class="text-2xl text-gray-400">→</span>
+        <div class="bg-red-50 px-4 py-3 rounded-xl">
+          <span class="font-semibold text-gray-800">Can't grow as fast</span>
+        </div>
+        <span class="text-2xl text-gray-400">→</span>
+        <div class="bg-red-50 px-4 py-3 rounded-xl">
+          <span class="font-semibold text-gray-800">Still can't afford benefits</span>
+        </div>
+      </div>
+      
+      <p class="font-body text-lg text-gray-700 text-center mt-4">
+        Large corporations negotiate group rates. You get whatever's left. Same country, completely different system.
+      </p>
+    </div>
+
+    <!-- US vs Others -->
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="card p-6">
+        <h3 class="font-display font-bold text-lg text-gray-900 mb-4">
+          What You're Paying vs. the World
+        </h3>
+        <div class="space-y-4">
+          <div>
+            <div class="flex justify-between mb-1">
+              <span class="font-semibold text-gray-700">United States</span>
+              <span class="font-mono text-red-600 font-bold">$14,885</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill bar-red" style="width: 100%"></div>
+            </div>
+          </div>
+          <div>
+            <div class="flex justify-between mb-1">
+              <span class="font-semibold text-gray-700">Comparable Countries Avg</span>
+              <span class="font-mono text-blue-600 font-bold">$7,371</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill bar-blue" style="width: 50%"></div>
+            </div>
+          </div>
+        </div>
+        <p class="text-sm text-gray-500 mt-4">Per capita healthcare spending, 2023</p>
+      </div>
+      
+      <div class="card p-6">
+        <h3 class="font-display font-bold text-lg text-gray-900 mb-4">
+          The Real-World Impact
+        </h3>
+        <div class="space-y-3">
+          <div class="flex items-center gap-3">
+            <Banknote class="w-6 h-6 text-red-500 flex-shrink-0" />
+            <p class="text-gray-700">
+              <strong>36%</strong> of Americans skip care due to cost
+            </p>
+          </div>
+          <div class="flex items-center gap-3">
+            <Flag class="w-6 h-6 text-blue-500 flex-shrink-0" />
+            <p class="text-gray-700">
+              <strong>3.6%</strong> of EU citizens skip care due to cost
+            </p>
+          </div>
+          <div class="flex items-center gap-3">
+            <TrendingUp class="w-6 h-6 text-red-500 flex-shrink-0" />
+            <p class="text-gray-700">
+              Premiums rising <strong>9%</strong> in 2025
+            </p>
+          </div>
+        </div>
+        <p class="text-sm text-gray-500 mt-4">Commonwealth Fund / KFF, 2024</p>
+      </div>
+    </div>
+  </div>
+</section>
