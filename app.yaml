@@ -1,0 +1,3 @@
+kind: wasmer.io/App.v0
+name: small-business-truth-site
+package: derintolu/small-business-truth-site
